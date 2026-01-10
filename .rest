@@ -1,0 +1,8 @@
+
+// Search by user 
+GET https://cs341project.onrender.com/users
+
+###
+
+//Search by user id
+GET https://cs341project.onrender.com/users/59b99db4cfa9a34dcd7885b6
