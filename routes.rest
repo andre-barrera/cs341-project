@@ -1,19 +1,21 @@
 // Local Host
 ### Get all contacts
-GET http://localhost:3000/users
+GET http://localhost:3001/users
 
 ### Get users by contact ID
 
 GET http://localhost:3000/users/696ecb3c8f8306846c518acc
 
 ### Create Contact
-POST http://localhost:3000/users HTTP/1.1
+POST http://localhost:3001/users HTTP/1.1
 content-type: application/json
 
 {   
-    "name": "Michael White",
-    "email": "michael.w@test.com",
-    "password": "561651151615515155252514164151"
+    "firstName": "Michael",
+    "lastName": "White",
+    "email": "whiteeeeMichael@test.com",
+    "favoriteColor": "blue",
+    "birthday": "9-10-1993"
 }
 
 ### PUT contact
@@ -21,10 +23,12 @@ PUT http://localhost:3000/users/696ecb3c8f8306846c518acc
 content-type: application/json
 
 {
-    "name": "Michael White",
+    "firstName": "Michael",
+    "lastName": "White",
     "email": "michael.white@test.com",
-    "password": "561651151615515155252514164151"
+    "favoriteColor": "blue",
+    "birthday": "9-10-1993"
 }
 
 ### Delete contact
-DELETE http://localhost:3000/users/696eceb7f8101f9eff9fd1ab
+DELETE http://localhost:3001/users/696edf377ba964ac90140e41
